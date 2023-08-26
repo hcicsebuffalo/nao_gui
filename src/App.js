@@ -16,7 +16,7 @@ import { orange } from '@mui/material/colors';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#bd6b2d', // Replace with your custom primary color
+      main: '#86c5d8', // Replace with your custom primary color
     },
     secondary: {
       main: '#2d9ebd', // Replace with your custom secondary color

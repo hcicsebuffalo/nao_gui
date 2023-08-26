@@ -73,9 +73,9 @@ const Camera = () => {
   return (
     // , backgroundColor: "#85C1E9"
     <div style={{ padding: '1%' }}>
-      <AppBar style={{ backgroundColor: '#bd6b2d'}}>
+      <AppBar style={{ backgroundColor: '#86c5d8'}}>
         <Toolbar>
-          <h1 style={{ color: 'white' }}>Aiko Dashboard</h1>
+          <h1 style={{ color: 'white' }}>Pepper Dashboard</h1>
         </Toolbar>
       </AppBar>
       
@@ -130,7 +130,7 @@ const Camera = () => {
           </Grid> */}
           <Grid xs={3}>
             <div>
-              <h1 style={{ color : '#919294'}}>Choose Actions</h1>
+              <h1 style={{ color : '#86c5d8'}}>Choose Actions</h1>
               <Box sx={{ width: '100%' }}>
                 <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                   <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
