@@ -131,32 +131,50 @@ const Camera = () => {
           <Grid xs={3}>
             <div>
               <h1 style={{ color : '#919294'}}>Choose Actions</h1>
-              <Box sx={{ width: '100%' }}>
-                <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+              <Box sx={{ maxWidth: '100', height: '100%' }}>
+                <Box sx={{ borderBottom: 1, borderColor: 'divider', height: '100%' }}>
                   <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                    <Tab label="Move" {...a11yProps(0)} />
-                    <Tab label="Voice" {...a11yProps(1)} />
+                    <Tab label="Gestures" {...a11yProps(0)} />
+                    {/* <Tab label="Voice" {...a11yProps(1)} /> */}
+                    <Tab label="Emotions" {...a11yProps(1)} />
                   </Tabs>
                 </Box>
                 <TabPanel value={value} index={0}>
-                  <Card style={{ borderRadius: '20px', backgroundColor: 'white', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0)', maxWidth: '90%', padding: '5%' }}>
-                    <CardActions sx={{}}>
-                      <Button variant='outlined' color='primary' style={{ minWidth: '20%' }} onClick={(e) => {handleClickButton('dance')}}>Dance</Button>
-                      <Button variant='outlined' style={{ minWidth: '20%' }} onClick={(e) => {handleClickButton('takepicture')}}>Take Picture</Button>
+                  <Card style={{ borderRadius: '20px', backgroundColor: 'white', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0)', maxWidth: '90%', padding: '2%' }}>
+                    <CardActions sx={{}} style={{ display: 'block' }}>
+                      <Button variant='outlined' color='primary' style={{ minWidth: '20%', margin: "2%" }} onClick={(e) => {handleClickButton('dance')}}>Dance</Button>
+                      <Button variant='outlined' style={{ minWidth: '20%', margin: "2%" }} onClick={(e) => {handleClickButton('takepicture')}}>Take Picture</Button>
+                      <Button variant='outlined' style={{ minWidth: '20%', margin: "2%" }} onClick={(e) => {handleClickButton('attention')}}>Attention</Button>
+                      <Button variant='outlined' style={{ minWidth: '20%', margin: "2%" }} onClick={(e) => {handleClickButton('zombie')}}>Zombie</Button>
+                      <Button variant='outlined' style={{ minWidth: '20%', margin: "2%" }} onClick={(e) => {handleClickButton('scratchhead')}}>Scratch Head</Button>
                     </CardActions>
                   </Card>
-                </TabPanel>
+                </TabPanel>                                               
+                {/* <TabPanel value={value} index={1}>
+                  <Card style={{ borderRadius: '20px', backgroundColor: 'white', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0)', maxWidth: '90%', padding: '2%' }}>
+                    <CardActions sx={{}} style={{ display: 'block' }}>
+                      <Button variant='outlined' style={{ minWidth: '20%', margin: "2%" }} onClick={(e) => {handleClickButton('sing')}}>Sing</Button>
+                      <Button variant='outlined' style={{ minWidth: '20%', margin: "2%" }} onClick={(e) => {handleClickButton('laugh')}}>Laugh</Button>
+                      <Button variant='outlined' style={{ minWidth: '20%', margin: "2%" }} onClick={(e) => {handleClickButton('talk')}}>Laugh</Button>
+                      <Button variant='outlined' style={{ minWidth: '20%', margin: "2%" }} onClick={(e) => {handleClickButton('talk2')}}>Laugh</Button>
+
+                    </CardActions>
+                  </Card>
+                </TabPanel> */}
                 <TabPanel value={value} index={1}>
-                <Card style={{ borderRadius: '20px', backgroundColor: 'white', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0)', maxWidth: '90%', padding: '5%' }}>
-                    <CardActions sx={{}}>
-                    <Button variant='outlined' style={{ minWidth: '20%' }} onClick={(e) => {handleClickButton('sing')}}>Sing</Button>
-                  <Button variant='outlined' style={{ minWidth: '20%' }} onClick={(e) => {handleClickButton('laugh')}}>Laugh</Button>
+                  <Card style={{ borderRadius: '20px', backgroundColor: 'white', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0)', maxWidth: '90%', padding: '2%',  }}>
+                    <CardActions sx={{}} style={{ display: 'block' }}>
+                      <Button variant='outlined' style={{ minWidth: '20%', margin: "2%" }} onClick={(e) => {handleClickButton('hungry')}}>Hungry</Button>
+                      <Button variant='outlined' style={{ minWidth: '20%', margin: "2%" }} onClick={(e) => {handleClickButton('embarassed')}}>Embarassed</Button>
+                      <Button variant='outlined' style={{ minWidth: '20%', margin: "2%" }} onClick={(e) => {handleClickButton('fear')}}>Fear</Button>
+                      <Button variant='outlined' style={{ minWidth: '20%', margin: "2%" }} onClick={(e) => {handleClickButton('hurt')}}>Hurt</Button>
+                      <Button variant='outlined' style={{ minWidth: '20%', margin: "2%" }} onClick={(e) => {handleClickButton('sorry')}}>Sorry</Button>
                     </CardActions>
                   </Card>
                 </TabPanel>
                 
               </Box>
-              {/* <Card style={{ borderRadius: '20px', backgroundColor: 'white', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0)', maxWidth: '90%', padding: '5%' }}>
+              {/* <Card style={{ borderRadius: '20px', backgroundColor: 'white', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0)', maxWidth: '90%', padding: '2%' }}>
                 <CardActions sx={{}}>
                 <Button variant='outlined' style={{ minWidth: '20%' }} onClick={(e) => {handleClickButton('dance')}}>Dance</Button>
                 <Button variant='outlined' style={{ minWidth: '50%' }} onClick={(e) => {handleClickButton('wave')}}>Wave</Button>
